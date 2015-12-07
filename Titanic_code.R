@@ -69,7 +69,7 @@ new_test<- all_dat[(nrow(dat_train)+1):nrow(all_dat),]
 #Detaching party kit to run cforest()
 detach("package:partykit", unload=TRUE)
 
-#Building a model based on c-forest funtion with 2000 trees
+#Building a model based on c-forest function with 2000 trees
 titanicFit <- cforest(as.factor(Survived) ~ Pclass + Sex + Age + Fare + Embarked + Title + FamilySize + FamilyID,
                       data = new_train, controls=cforest_unbiased(mtry=3, ntree=2000))
 
