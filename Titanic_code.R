@@ -1,4 +1,4 @@
-#The logic behind this code was from the blog Mr. Trevor Davis. It was merely improved upon from that
+#The logic behind this code was from the blog of Mr. Trevor Stephens. It was merely improved upon from that
 #Link: http://trevorstephens.com/post/72916401642/titanic-getting-started-with-r
 
 #Installing the necessary packages
