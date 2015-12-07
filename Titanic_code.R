@@ -59,7 +59,7 @@ all_dat$Age[is.na(all_dat$Age)] <- predict(Agefit, all_dat[is.na(all_dat$Age),])
 all_dat$Embarked[all_dat$Embarked == ''] = "S"
 all_dat$Embarked <- factor(all_dat$Embarked)
 
-Filling missing fare values with median of the same
+#Filling missing fare values with median of the same
 all_dat$Fare[is.na(all_dat$Fare)] <- median(all_dat$Fare, na.rm=TRUE)
 
 #Splitting train and test data after preprocessing
